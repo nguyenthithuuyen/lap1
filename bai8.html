@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = Math.floor(Math.random() * 10);
+    document.write(a);
+    let num = 0;
+    let dem = 0;
+
+    do {
+        num = +prompt('nhap so tu ban phim');
+        if (num > a) {
+            dem++;
+
+            alert('nhập số nhỏ hơn');
+        } else if (num == a) {
+            alert("chuc mung ban");
+            break;
+        } else if (num < a) {
+            alert('nhap so lon hon');
+            dem++;
+
+        }
+    }
+    while (dem < 3);
+</script>
+
+
+</body>
+</html>
